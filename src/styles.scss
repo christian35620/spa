@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '~font-awesome/css/font-awesome.min.css';
+
+@font-face {
+    font-family: 'n__c_e_tagregular';
+    src: url('src/assets/fonts/nce_tag-webfont.woff2') format('woff2'),
+         url('src/assets/fonts/nce_tag-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.graffiti { 
+    font-family: 'n__c_e_tagregular', Arial, sans-serif; 
+    font-size: 80 vw;
+}
