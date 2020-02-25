@@ -1,0 +1,96 @@
+{
+  "last_modified": "2016-03-11T13:09:01-05:00",
+  "num_results": 3,
+  "results": [
+    {
+      "amazon_product_url": "http://www.amazon.com/Girls-Guide-Moving-On-Novel-ebook/dp/B00ZNE17B4?tag=thenewyorktim-20",
+      "asterisk": 0,
+      "bestsellers_date": "2016-03-05",
+      "book_details": {
+        "age_group": "",
+        "author": "Debbie Macomber",
+        "contributor": "by Debbie Macomber",
+        "contributor_note": "",
+        "description": "A mother and her daughter-in-law both leave unhappy marriages and take up with new men.",
+        "file_size_kb": 1536,
+        "price": 23.5,
+        "primary_isbn10": "0553391925",
+        "primary_isbn13": "9780553391923",
+        "publisher": "Ballantine",
+        "title": "A GIRL'S GUIDE TO MOVING ON"
+      },
+      "display_name": "Hardcover Fiction",
+      "isbns": [
+        {
+          "isbn10": "0553391925",
+          "isbn13": "9780553391923"
+        }
+      ],
+      "list_name": "Hardcover Fiction",
+      "published_date": "2016-03-20",
+      "rank": 5,
+      "rank_last_week": 2,
+      "weeks_on_list": 2
+    },
+    {
+      "amazon_product_url": "https://www.amazon.com/Beneath-Scarlet-Sky-Mark-Sullivan-ebook/dp/B01L1CEZ6K",
+      "asterisk": 0,
+      "bestsellers_date": "2020-01-15",
+      "book_details": {
+        "age_group": "",
+        "author": "Delia Owens",
+        "contributor": "by Delia Owensr",
+        "contributor_note": "",
+        "description": "Crawdads is a story lovingly told—one that takes its time in developing its characters and setting, and in developing the story. You’ll want to relax and take your time as well, and when you’re done you will want to talk about it with another reader.",
+        "file_size_kb": 1262,
+        "price": 15.59,
+        "primary_isbn10": "0735219095",
+        "primary_isbn13": "9780735219090",
+        "publisher": "G.P. Putnam's Sons",
+        "title": "Where the Crawdads Sing"
+      },
+      "display_name": "Hardcover Fiction",
+      "isbns": [
+        {
+          "isbn10": "0735219095",
+          "isbn13": "9780735219090"
+        }
+      ],
+      "list_name": "Hardcover Fiction",
+      "published_date": "2018-08-14",
+      "rank": 2,
+      "rank_last_week": 3,
+      "weeks_on_list": 76
+    },
+    {
+      "amazon_product_url": "https://www.amazon.com/Where-Crawdads-Sing-Delia-Owens/dp/0735219095/ref=sr_1_1?crid=1HMWVL2GI7YEA",
+      "asterisk": 0,
+      "bestsellers_date": "2019-08-23",
+      "book_details": {
+        "author": "Mark Sullivan",
+        "contributor": "by Mark Sullivan",
+        "contributor_note": "",
+        "description": "Pino Lella wants nothing to do with the war or the Nazis. He’s a normal Italian teenager—obsessed with music, food, and girls—but his days of innocence are numbered.",
+        "file_size_kb": 2345,
+        "price": 7.49,
+        "primary_isbn10": "1503943372",
+        "primary_isbn13": "9781503943377",
+        "publisher": "Lake Union Publishing",
+        "title": "Beneath a Scarlet Sky"
+      },
+      "display_name": "Hardcover Fiction",
+      "isbns": [
+        {
+          "isbn10": "1503943372",
+          "isbn13": "9781503943377"
+        }
+      ],
+      "list_name": "Hardcover Fiction",
+      "published_date": "2017-05-01",
+      "rank": 6,
+      "rank_last_week": 6,
+      "weeks_on_list": 89
+    }
+  ],
+  "status": "OK"
+}
