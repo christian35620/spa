@@ -1,1 +1,93 @@
-<p>book-list works!</p>
+<br /><br />
+<div class="row row-cols-1 row-cols-md-4">
+	<div
+		*ngFor="let book of books"
+		class="AllEditionsItem-tile Recipe-default"
+		aria-current="false"
+	>
+		<div class="SearchResultTileItem-topSector">
+			<div class="AllEditionsItem-tileTitle">
+				<a [href]="book.amazon_product_url">{{
+					book.book_details.title | uppercase
+				}}</a>
+			</div>
+
+			<div
+				class="SearchResultListItem-bottomSpacing SearchResultListItem-subheading"
+			>
+				by
+				<a
+					[routerLink]="['/book-list']"
+					itemprop="author"
+					[innerHTML]="book.book_details.author | bold"
+				></a>
+			</div>
+		</div>
+		<div class="SearchResultTileItem-middleSector">
+			<div class="SearchResultTileItem-rowWrapper">
+				<div class="SearchResultTileItem-photo">
+					<img
+						src="https://img.thriftbooks.com/api/images/m/3a4850c84fb9d2b2a55e5fb1526261773dad55fb.jpg"
+						alt="Beginning Angular with Typescript (Updated to Angular 6)"
+					/>
+				</div>
+				<div class="SearchResultTileItem-dataPoints">
+					<div>
+						<div>
+							<div
+								[ngClass]="
+									getCurrencyColor(book.book_details.price)
+								"
+							>
+								{{ book.book_details.price | currency }}
+							</div>
+						</div>
+						<div class="text-subheading">
+							<strong>Rank: {{ book.rank }}</strong>
+						</div>
+					</div>
+					<div class="SearchResultTileItem-topMargin">
+						<div class="SearchResultTileItem-format">
+							Published Date:
+							<strong>{{ book.published_date | date }} </strong>
+						</div>
+						<div class="SearchResultTileItem-format">
+							Best seller from:
+							<strong
+								>{{
+									book.bestsellers_date | date: "MM/dd/yyyy"
+								}}
+							</strong>
+						</div>
+						<div
+							class="SearchResultListItem-subheading SearchResultListItem-bottomSpacing-small"
+						>
+							Filesize:
+							<strong title="">{{
+								book.book_details.file_size_kb | toMB
+							}}</strong>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="SearchResultTileItem-bottomSector">
+			<div
+				class="AddToCartButton SearchResultsListItem-topSpacing SearchResultListItem-bottomSpacing SearchResultsTileItem-rightSpacing"
+			>
+				<div
+					class="AddToCartButton-Desktop Button-container is-small"
+					title=""
+				>
+					<button
+						(click)="gotoAmazon(book.amazon_product_url)"
+						class="Button"
+						type="button"
+					>
+						Go to Amazon
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
