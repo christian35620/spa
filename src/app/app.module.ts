@@ -11,6 +11,7 @@ import { ContactComponent } from "./components/contact/contact.component";
 import { BookListComponent } from "./components/book-list/book-list.component";
 import { BoldPipe } from "./pipes/bold.pipe";
 import { ToMBPipe } from "./pipes/to-mb.pipe";
+import { NatoursComponent } from './components/natours/natours.component';
 
 @NgModule({
 	declarations: [
@@ -22,7 +23,8 @@ import { ToMBPipe } from "./pipes/to-mb.pipe";
 		ContactComponent,
 		BookListComponent,
 		BoldPipe,
-		ToMBPipe
+		ToMBPipe,
+		NatoursComponent
 	],
 	imports: [BrowserModule, AppRoutingModule],
 	providers: [],

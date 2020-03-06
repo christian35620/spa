@@ -1,0 +1,7 @@
+@mixin clearfix {
+    &::after{
+        content: ""; //always necesary when especifying ::after
+        display: table;
+        clear: both;
+    }
+}
