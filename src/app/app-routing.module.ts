@@ -5,6 +5,7 @@ import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { BookListComponent } from './components/book-list/book-list.component';
 import { NatoursComponent } from './components/natours/natours.component';
+import { TrilloComponent } from './components/trillo/trillo.component';
 
 const routes: Routes = [
 	{
@@ -18,6 +19,10 @@ const routes: Routes = [
 	{
 		path: "natours",
 		component: NatoursComponent
+	},
+	{
+		path: "trillo",
+		component: TrilloComponent
 	},
 	{
 		path: "about",

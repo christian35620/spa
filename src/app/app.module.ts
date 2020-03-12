@@ -12,6 +12,7 @@ import { BookListComponent } from "./components/book-list/book-list.component";
 import { BoldPipe } from "./pipes/bold.pipe";
 import { ToMBPipe } from "./pipes/to-mb.pipe";
 import { NatoursComponent } from './components/natours/natours.component';
+import { TrilloComponent } from './components/trillo/trillo.component';
 
 @NgModule({
 	declarations: [
@@ -24,7 +25,8 @@ import { NatoursComponent } from './components/natours/natours.component';
 		BookListComponent,
 		BoldPipe,
 		ToMBPipe,
-		NatoursComponent
+		NatoursComponent,
+		TrilloComponent
 	],
 	imports: [BrowserModule, AppRoutingModule],
 	providers: [],
