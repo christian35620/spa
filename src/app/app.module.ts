@@ -13,6 +13,7 @@ import { BoldPipe } from "./pipes/bold.pipe";
 import { ToMBPipe } from "./pipes/to-mb.pipe";
 import { NatoursComponent } from './components/natours/natours.component';
 import { TrilloComponent } from './components/trillo/trillo.component';
+import { NexterComponent } from './components/nexter/nexter.component';
 
 @NgModule({
 	declarations: [
@@ -26,7 +27,8 @@ import { TrilloComponent } from './components/trillo/trillo.component';
 		BoldPipe,
 		ToMBPipe,
 		NatoursComponent,
-		TrilloComponent
+		TrilloComponent,
+		NexterComponent
 	],
 	imports: [BrowserModule, AppRoutingModule],
 	providers: [],
