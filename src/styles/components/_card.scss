@@ -4,27 +4,27 @@
 	position: relative;
 	height: 47rem;
 
-	&__checkbox {
-		display: none;
-	}
+	// &__checkbox {
+	// 	display: none;
+	// }
 
-	&__voltear-button {
-		cursor: pointer;
-		display: block;
-		height: 30%; //ALTURA DE AREA PARA HACER CLICK Y VOLTEAR LA TARJETA
-		background-color: transparent;
-		position: relative;
-		z-index: 1000;
-	}
+	// &__voltear-button {
+	// 	cursor: pointer;
+	// 	display: block;
+	// 	height: 30%; //ALTURA DE AREA PARA HACER CLICK Y VOLTEAR LA TARJETA
+	// 	background-color: transparent;
+	// 	position: relative;
+	// 	z-index: 1000;
+	// }
 
-	//VOLTEAR TARJETA CON CHECKBOX HACK
-	&__checkbox:checked ~ &__side--front {
-		transform: rotateY(-180deg);
-	}
+	// //VOLTEAR TARJETA CON CHECKBOX HACK
+	// &__checkbox:checked ~ &__side--front {
+	// 	transform: rotateY(-180deg);
+	// }
 
-	&__checkbox:checked ~ &__side--back {
-		transform: rotateY(0deg);
-	}
+	// &__checkbox:checked ~ &__side--back {
+	// 	transform: rotateY(0deg);
+	// }
 
 	//FUNCTIONALITY
 	&__side {
@@ -63,13 +63,13 @@
 	}
 
 	//DESCOMENTAR PARA VOLTEAR TARJETA ON HOVER
-	// &:hover &__side--front {
-	// 	transform: rotateY(-180deg);
-	// }
+	&:hover &__side--front {
+		transform: rotateY(-180deg);
+	}
 
-	// &:hover &__side--back {
-	// 	transform: rotateY(0deg);
-	// }
+	&:hover &__side--back {
+		transform: rotateY(0deg);
+	}
 
 	//FRONT SIDE STYLING
 	&__picture {
