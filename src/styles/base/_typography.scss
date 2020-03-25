@@ -1,14 +1,11 @@
-@import '~font-awesome/css/font-awesome.min.css';
-
-
+@import "~font-awesome/css/font-awesome.min.css";
+@import "abstracts/mixins";
 
 @font-face {
-    font-family: 'n__c_e_tagregular';
-    src: url('src/assets/fonts/nce_tag-webfont.woff2') format('woff2'),
-         url('src/assets/fonts/nce_tag-webfont.woff') format('woff');
+    font-family: "n__c_e_tagregular";
+    src: url("src/assets/fonts/nce_tag-webfont.woff2") format("woff2"), url("src/assets/fonts/nce_tag-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal;
-
 }
 
 body {
@@ -17,15 +14,14 @@ body {
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.7;
-    padding: 0 3rem;
 }
 
-.graffiti { 
-    font-family: 'n__c_e_tagregular', Arial, sans-serif; 
+.graffiti {
+    font-family: "n__c_e_tagregular", Arial, sans-serif;
     font-size: 80 vw;
 }
 
-.heading-primary{
+.heading-primary {
     color: $color-white;
     text-transform: uppercase;
     margin-bottom: 6rem;
@@ -33,27 +29,35 @@ body {
     // evitar temblores en etiqueta padre para la animacion
     backface-visibility: hidden;
 
-    &--main{
-    display: block;
-    font-size: 6rem;
-    font-weight: 400;
-    letter-spacing: 3.5rem;
+    &--main {
+        display: block;
+        font-size: 6rem;
+        font-weight: 400;
+        letter-spacing: 3.5rem;
 
-    animation-name: moveInLeft;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
+        animation-name: moveInLeft;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
 
-    /* animation-delay: 2s;
+        @include respond(phone) {
+            letter-spacing: 1rem;
+            font-size: 5rem;
+        }
+
+        /* animation-delay: 2s;
     animation-iteration-count: 3; */
     }
 
-    &--sub{
-    display: block;
-    font-size: 2rem ;
-    font-weight: 700;
-    letter-spacing: 1.65rem ;
+    &--sub {
+        display: block;
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 1.65rem;
+        animation: moveInRight 1s ease-out;
 
-    animation: moveInRight 1s ease-out;
+        @include respond(phone) {
+            letter-spacing: 0.5rem;
+        }
     }
 }
 
@@ -66,23 +70,31 @@ body {
     -webkit-background-clip: text;
     color: transparent;
     letter-spacing: 2px;
-    transition: all .2s;
+    transition: all 0.2s;
 
-    &:hover{
+    @include respond(tab-port) {
+        font-size: 3rem;
+    }
+
+    @include respond(phone) {
+        font-size: 2.5rem;
+    }
+
+    &:hover {
         transform: skewY(2deg) skewX(15deg) scale(1.1);
-        text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+        text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
     }
 }
 
-.heading-tertiary{
+.heading-tertiary {
     font-size: $default-font-size;
     font-weight: 700;
     text-transform: uppercase;
 }
 
-.paragraph{
+.paragraph {
     font-size: $default-font-size;
-    &:not(:last-child){
+    &:not(:last-child) {
         margin-bottom: 3rem;
     }
 }

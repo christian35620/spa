@@ -1,252 +1,94 @@
+:host {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    grid-gap: 1rem;
+    place-items: center;
+}
+
 // PRICE COLOR SETTING
 .red-price {
     color: rgb(204, 21, 21);
 }
 
-.yellow-price{
+.yellow-price {
     color: rgb(255, 153, 0);
 }
 
+.card {
+    margin-top: 2rem;
+    display: grid;
+    padding: 1rem;
+    grid-template-columns: max-content;
+    grid-template-rows: max-content max-content min-content;
+    row-gap: 1rem;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2), 0px 3px 4px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.14);
 
-// PERCENTAGE DISTRIBUTION OF SECTORS INSIDE CARD
-.SearchResultTileItem-topSector {
-    height: 18%;
-}
+    &__top-section {
+    }
 
-.SearchResultTileItem-middleSector {
-    height: 55%;
-}
+    &__middle-section {
+        display: grid;
+        grid-template-columns: min-content max-content;
+        column-gap: 1rem;
+    }
 
-.SearchResultTileItem-bottomSector {
-    height: 27%;
-}
+    &__datapoints {
+        display: grid;
+        align-content: space-between;
+    }
 
-// TOP SECTOR STYLES
-.AllEditionsItem-tileTitle {
-    font-size: 13px;
-}
+    &__bottom-section {
+        padding: 0.5rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-.SearchResultListItem-bottomSpacing {
-    margin-bottom: 1rem;
-}
+    &__title {
+        font-size: 2rem;
 
-.SearchResultListItem-bottomSpacing-small {
-    margin-bottom: .5rem;
-}
+        a {
+            text-decoration: none;
+            color: #35938b;
+        }
+    }
 
-.SearchResultListItem-subheading {
-    font-size: .75rem;
-    line-height: 1rem;
-}
+    &__author {
+        font-size: 1rem;
+        line-height: 1.5rem;
 
-// MIDDLE SECTOR STYLES//////////////////////////////////////////
-// PHOTO
-.SearchResultTileItem-photo {
-    display: inline-block;
-}
+        a {
+            text-decoration: none;
+            color: #35938b;
+        }
+    }
 
-.SearchResultTileItem-photo img {
-    height: 110px;
-    width: 75px;
-}
+    &__price {
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
 
-img {
-    border: 0;
-    max-width: 100%;
-}
-
-// DATA POINTS
-.SearchResultTileItem-dataPoints {
-    margin-left: 10px;
-}
-
-.SearchResultTileItem-topMargin {
-    margin-top: 1rem;
-}
-
-.SearchResultListItem-dollarAmount {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    font-size: 1.5rem;
-    font-weight: 600;
+    &__rank {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #444;
+    }
 }
 
-.SearchResultListItem-dollarSign {
-    font-size: 20px;
-}
-
-.SearchResultTileItem-rowWrapper {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    -webkit-box-align: start;
-    -webkit-align-items: flex-start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    -webkit-flex-wrap: nowrap;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-}
-
-.SearchResultTileItem-topMargin {
-    margin-top: 1rem;
-}
-
-.SearchResultTileItem-format {
-    font-size: .75rem;
-    line-height: 1rem;
-}
-
-.SearchResultsTileItem-rightSpacing {
-    margin-right: .5rem;
-}
-
-.SearchResultsListItem-topSpacing {
-    margin-top: 1rem;
-}
-
-.SearchResultTileItem-subheading {
-    font-size: .75rem;
-    line-height: 1rem;
-    white-space: nowrap;
-    margin-bottom: 1rem;
-    text-align: center;
-}
-
-.SearchResultTileItem-subheading {
-    font-size: .75rem;
-    line-height: 1rem;
-    white-space: nowrap;
-    margin-bottom: 1rem;
-    text-align: center;
-}
-
-.Recipe-default {
-    font-size: .875rem;
-    color: #363636;
-}
-
-.Recipe-default .text-subheading {
-    font-size: .75rem;
-    line-height: 1rem;
-}
-
-.Recipe-default .text-gray {
-    color: grey;
-}
-
-.AllEditionsItem-tile {
-    width: 272px;
-    border: 1 solid #efefef;
-    background-color: #fff;
-    -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,.35);
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.35);
-    margin: 10px;
-    padding: 1rem .25rem 1rem .75rem;
-}
-
-a {
-    color: #35938b;
-    text-decoration: none;
-}
-
-b, strong {
-    font-weight: 700;
-}
-
-.AddToCartButton {
-    margin-bottom: 20px;
-}
-
-.Button-container.is-small {
-    padding: 3px;
-}
-.AddToCartButton-Desktop {
-    background: #fc3;
-    width: 100%;
-    padding: .75rem 3.75rem!important;
-    white-space: nowrap;
-}
-
-.Button-container {
-    -webkit-border-radius: 2px;
-    border-radius: 2px;
-    display: inline-block;
-    padding: 6px;
-    -webkit-transition: background .15s,-webkit-box-shadow .2s;
-    transition: background .15s,-webkit-box-shadow .2s;
-    transition: background .15s,box-shadow .2s;
-    transition: background .15s,box-shadow .2s,-webkit-box-shadow .2s;
-    -webkit-box-shadow: 0 2px 10px 0 rgba(0,0,0,.16), 0 2px 5px 0 rgba(0,0,0,.26);
-    box-shadow: 0 2px 10px 0 rgba(0,0,0,.16), 0 2px 5px 0 rgba(0,0,0,.26);
-}
-
-.Button-container, a.Button {
-    background: #35938b;
-}
-
-.AddToCartButton-Desktop button.Button {
-    color: #363636;
-    font-weight: 600;
-    border: none;
-    padding: 0;
-}
-.AddToCartButton .Button {
-    font-size: .875rem;
-}
-
-button.Button, input.Button {
-    border: none;
-    outline: 0;
-    -webkit-border-radius: 3px;
-    border-radius: 3px;
-    background: 0 0;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    padding: .25rem 1.5rem;
-    width: 100%;
-}
-
-a.Button, button.Button, input.Button {
-    display: inline-block;
-    position: relative;
-    background: #35938b;
-    padding: .75rem 1.5rem;
+.button {
+    background-color: #35938b;
     color: #fff;
-    text-decoration: none;
-    font-weight: 600;
-    -webkit-border-radius: 2px;
-    border-radius: 2px;
-    line-height: 1.5;
-}
-
-button, html input[type=button], input[type=reset], input[type=submit] {
-    -webkit-appearance: button;
+    border: none;
+    border-radius: 3px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding: 1.8rem 3rem;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2), 0px 3px 4px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.14);
     cursor: pointer;
-}
+    transition: all 0.2s;
 
-button, select {
-    text-transform: none;
-}
-
-button {
-    overflow: visible;
-}
-
-button, input, optgroup, select, textarea {
-    color: inherit;
-    font: inherit;
-    margin: 0;
+    &:hover {
+        background-color: #1f6862;
+    }
 }
